@@ -10,6 +10,15 @@ body {
 	font-weight: 700;
 }
 
+li {
+	list-style-type: none;
+}
+
+ul {
+	margin-left: 0;
+	padding-left: 0;
+}
+
 p {
 	line-height: 25px;
 	font-weight: 400;
@@ -731,4 +740,240 @@ a:active {
 	color: #FFFFFF;
 	text-decoration: none;
 	margin-left: 20px;
+}
+
+.all-sections {
+	height: 1148px;
+	overflow: hidden;
+}
+
+.popup {
+	position: absolute;
+	width: 100vw;
+	height: 988px;
+	left: 0px;
+	top: 80px;
+	background: rgba(0, 0, 0, 0.7);
+	backdrop-filter: blur(12.5px);
+	padding: 80px 0;
+	display: none;
+}
+
+.show-popup {
+	display: block;
+}
+
+.popup-wrapper {
+	width: 820px;
+	height: 986px;
+	left: 0px;
+	top: 2px;
+	background: #F2F2F2;
+	box-shadow: 0px 3px 4px rgba(255, 255, 255, 0.25), 0px -3px 4px rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	margin: 0 auto;
+}
+
+.popup-header {
+	display: flex;
+	justify-content: space-between;
+	background: #484848;
+	box-shadow: 0px 3px 4px rgba(39, 39, 39, 0.25), 0px -3px 4px rgba(39, 39, 39, 0.1);
+	border-radius: 10px;
+	height: 160px;
+	padding: 20px;
+	font-weight: 700;
+}
+
+.popup-header-text {
+	width: 670px;
+}
+
+.popup-title {
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+
+.popup-description-details {
+	display: flex;
+	margin-top: 20px;
+}
+
+.popup-description-details p {
+	font-weight: 700;
+	margin-right: 45px;
+}
+
+.popup-description-details p span {
+	font-weight: 400;
+	padding-left: 10px;
+}
+
+.popup-close {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 31px;
+	height: 31px;
+	border: none;
+	background-image: url('./images/icon-cross.png');
+}
+
+.popup-main {
+	display: flex;
+	padding: 20px;
+	color: #171717;
+}
+
+.popup-left {
+	width: 580px;
+	margin-right: 20px;
+}
+
+.popup-left-title {
+	font-weight: 700;
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+
+.popup-slider {
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.popup-gallery-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.popup-slider-left,
+.popup-slider-right {
+	width: 35px;
+	height: 32px;
+	border-radius: 50%;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border: none;
+	background-image: url('./images/popup-vector-left.png');
+}
+
+.popup-slider-right {
+	background-image: url('./images/popup-vector-right.png');
+}
+
+.popup-image {
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	border-radius: 10px;
+}
+
+.popup-image:not(:last-child) {
+	margin-right: 24px;
+}
+
+.popup-image img {
+	width: 100px;
+	height: 120px;
+}
+
+.popup-programm {
+	width: 540px;
+	height: 248px;
+	padding: 20px;
+	background: #FFFFFF;
+	box-shadow: 0px 3px 4px rgba(153, 153, 153, 0.25), 0px -3px 4px rgba(153, 153, 153, 0.1);
+	border-radius: 10px;
+
+}
+
+.short {
+	height: 26px;
+	padding: 12px 20px;
+	margin-top: 10px;
+}
+
+.short .programm-close {
+	transform: rotate(45deg);
+}
+
+.popup-programm-title {
+	display: flex;
+	justify-content: space-between;
+	font-weight: 700;
+	font-size: 25px;
+	margin-bottom: 30px;
+}
+
+.programm-close {
+	background-image: url('./images/icon-close-program.png');
+}
+
+.small-line {
+	display: inline-block;
+	width: 5px;
+	height: 0px;
+	margin-right: 5px;
+	border: 2px solid #171717;
+}
+
+.programm-list {
+	padding-left: 10px;
+}
+
+.programm-item {
+	display: flex;
+	align-items: center;
+	font-weight: 400;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.popup-prices {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	width: 160px;
+	height: 126px;
+	padding: 30px 10px;
+	margin-top: 30px;
+	background: #FFFFFF;
+	box-shadow: 0px 3px 4px rgba(153, 153, 153, 0.25), 0px -3px 4px rgba(153, 153, 153, 0.1);
+	border-radius: 10px;
+}
+
+.popup-discount {
+	position: absolute;
+	top: -30px;
+	left: 120px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: #F4D011;
+	box-shadow: 0px 3px 4px rgba(153, 153, 153, 0.25), 0px -3px 4px rgba(153, 153, 153, 0.1);
+	font-weight: 700;
+	font-size: 16px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.popup-monthly {
+	text-align: center;
+	font-weight: 400;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+.popup-prices .full-pay {
+	margin-bottom: 10px;
+}
+
+.popup-prices .full-pay .number {
+	text-decoration: line-through;
+}
+
+.popup .join {
+	width: 180px;
+	margin-top: 20px;
 }
