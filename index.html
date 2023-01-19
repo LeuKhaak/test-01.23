@@ -22,13 +22,15 @@
 			<div class="header-wrapper">
 				<div class="logo-image"></div>
 				<nav class="navigation">
-					<a class="nav-link" href="#">Курсы <span class="arrow"></span></a>
-					<a class="nav-link" href="#">О компании</a>
+					<a class="nav-link" href="#courses">Курсы <span class="arrow"></span></a>
+					<a class="nav-link" href="#about">О компании</a>
 					<a class="nav-link" href="#">Акции</a>
-					<a class="nav-link" href="#">Контакты</a>
+					<a class="nav-link" href="#contacts">Контакты</a>
 				</nav>
-				<div class="phone">+375(33) 637-30-79</div>
-				<div class="telegram"></div>
+				<a class="nav-link phone" href="#">+375(33) 637-30-79</a>
+				<div class="header-telegram">
+					<a class="telegram" href="#"></a>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -62,8 +64,8 @@
 		<div class="courses-image-background-2"></div>
 		<div class="container">
 			<div class="courses-title-wrapper">
-				<h2 class="courses-title">Кем <span class="yellow-text">стать</span>?</h2>
-				<p class="courses-description">Выберите направление и начните изучать то, что вам интересно.</p>
+				<h2 class="courses-title"><a name="courses"></a></p>Кем <span class="yellow-text">стать</span>?</h2>
+				<p class="courses-description">Выберите направление и начните изучать то, что вам интересно.
 			</div>
 			<div class="courses-wrapper">
 
@@ -91,7 +93,7 @@
 						<div class="reduced-pay"><span class="number">1984 </span>BYN</div>
 					</div>
 					<div class="course-item-buttons">
-						<button class="">Подробнее</button>
+						<button class="more-detail">Подробнее</button>
 						<button class="join">Записаться</button>
 					</div>
 				</div>
@@ -119,7 +121,7 @@
 						<div class="reduced-pay"><span class="number">1984 </span>BYN</div>
 					</div>
 					<div class="course-item-buttons">
-						<button class="">Подробнее</button>
+						<button class="more-detail">Подробнее</button>
 						<button class="join">Записаться</button>
 					</div>
 				</div>
@@ -148,7 +150,7 @@
 						<div class="reduced-pay"><span class="number">1984 </span>BYN</div>
 					</div>
 					<div class="course-item-buttons">
-						<button class="">Подробнее</button>
+						<button class="more-detail">Подробнее</button>
 						<button class="join">Записаться</button>
 					</div>
 				</div>
@@ -176,7 +178,7 @@
 						<div class="reduced-pay"><span class="number">1984 </span>BYN</div>
 					</div>
 					<div class="course-item-buttons">
-						<button class="">Подробнее</button>
+						<button class="more-detail">Подробнее</button>
 						<button class="join">Записаться</button>
 					</div>
 				</div>
@@ -188,7 +190,7 @@
 		<div class="container">
 			<div class="about-top-wrapper">
 				<div class="about-title-wrapper">
-					<h2 class="courses-title">Наша <span class="yellow-text">школа</span></h2>
+					<h2 class="courses-title">Наша <span class="yellow-text">школа</span><a name="about"></a></h2>
 					<p class="courses-description">В своём стремлении повысить качество жизни, они забывают, что перспективное
 						планирование играет важную роль в формировании системы обучения кадров, соответствующей насущным
 						потребностям.
@@ -226,6 +228,7 @@
 		</div>
 	</section>
 	<section class="feedback">
+		<div class="feedback-image-background"></div>
 		<div class="container">
 			<h2 class="courses-title">Поможем в <span class="yellow-text">выборе</span>!</h2>
 			<div class="feedback-wrapper">
@@ -251,7 +254,43 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="footer-wrapper">
-
+				<div class="footer-about">
+					<div class="logo-image"></div>
+					<p class="company-title">ООО “Бесконечные курсы”</p>
+					<p>220140, Беларусь, г. Минск,<br>
+						ул. Мира 2, д. 22, офис 222</p>
+					<div class="social-media">
+						<a class="whatsapp" href="#"></a>
+						<a class="telegram" href="#"></a>
+						<a class="viber" href="#"></a>
+					</div>
+				</div>
+				<div class="footer-courses">
+					<h4 class="footer-courses-title">Курсы</h4>
+					<div class="footer-courses-links">
+						<a class="nav-link" href="#">Управленческий коучинг</a>
+						<a class="nav-link" href="#">Разработчик игр на Unity</a>
+						<a class="nav-link" href="#">Android-разработка</a>
+						<a class="nav-link" href="#">Веб-дизайнер</a>
+						<a class="nav-link" href="#">Digital-маркетинг</a>
+						<a class="nav-link" href="#">Fullstack-разработчик на Python</a>
+						<a class="nav-link" href="#">Soft Skills for Hard Times</a>
+						<a class="nav-link" href="#">DevOps-инженер</a>
+					</div>
+				</div>
+				<div class="footer-contacts"><a name="contacts"></a>
+					<h4 class="footer-courses-title">Контакты</h4>
+					<a class="nav-link" href="#">+375(33) 637-30-79</a>
+					<a class="nav-link" href="#">sales@insaitika.com</a>
+				</div>
+			</div>
+			<div class="uderline"></div>
+			<div class="footer-links-wrapper">
+				<p>©Все права защищены.</p>
+				<div class="footer-links">
+					<a class="footer-link" href="#">Политика конфиденциальности</a>
+					<a class="footer-link" href="#">Публичная оферта</a>
+				</div>
 			</div>
 		</div>
 	</footer>

@@ -36,8 +36,23 @@ button {
 	font-size: 20px;
 }
 
+button:hover {
+	color: #171717;
+	background: #FFE247;
+	box-shadow: 0px 4px 4px rgba(85, 85, 85, 0.25);
+	border-radius: 5px;
+	border: none;
+}
+
+button:active {
+	color: #FFFFFF;
+	background: #FFEB7F;
+	border-radius: 5px;
+	border: none;
+}
+
 .container {
-	width: 62%;
+	width: 98%;
 	max-width: 1180px;
 	margin: 0 auto;
 }
@@ -67,6 +82,19 @@ button {
 	justify-content: space-between;
 	margin-left: auto;
 	font-weight: 500;
+}
+
+a:hover {
+	text-decoration: underline;
+	text-decoration-color: #FFEB7F;
+	position: relative;
+	top: -2px;
+}
+
+a:active {
+	text-decoration: none;
+	position: relative;
+	top: -4px;
 }
 
 .nav-link {
@@ -107,13 +135,10 @@ button {
 	margin-left: 80px;
 }
 
-.telegram {
+.header-telegram {
 	margin-left: 25px;
 	width: 20px;
 	height: 20px;
-	background-image: url('./images/icon-telegram.png');
-	background-repeat: no-repeat;
-	cursor: pointer;
 }
 
 .main {
@@ -387,6 +412,19 @@ button {
 	justify-content: space-between;
 }
 
+.more-detail:hover {
+	color: #FFFFFF;
+	background: #252525;
+	box-shadow: 0px 4px 4px rgba(85, 85, 85, 0.25);
+	border-radius: 5px;
+}
+
+.more-detail:active {
+	color: #F2F2F2;
+	background: #FFFFFF;
+	border-radius: 5px;
+}
+
 .all-courses {
 	margin-right: 40px;
 	background-color: #F4D011;
@@ -430,7 +468,7 @@ button {
 }
 
 .results-wrapper {
-	display: flex;
+	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-column-gap: 65px;
 	font-weight: 400;
@@ -449,15 +487,31 @@ button {
 }
 
 .slider {
-	width: 32px;
+	width: 35px;
 	height: 32px;
 	border: none;
 	background-image: url('./images/arrow-left.png');
 	background-repeat: no-repeat;
 }
 
+.slider:hover {
+	background-image: url('./images/arrow-hover-left.png');
+}
+
+.slider:active {
+	background-image: url('./images/arrow-active-left.png');
+}
+
 .right {
 	background-image: url('./images/arrow-right.png');
+}
+
+.right:hover {
+	background-image: url('./images/arrow-hover-right.png');
+}
+
+.right:active {
+	background-image: url('./images/arrow-active-right.png');
 }
 
 .persons-slider {
@@ -491,6 +545,18 @@ button {
 .feedback {
 	padding-top: 40px;
 	padding-bottom: 105px;
+	position: relative;
+}
+
+.feedback-image-background {
+	background-image: url('./images/background-courses.png');
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 687px;
+	height: 266px;
+	left: 150px;
+	top: 85px;
+	transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 .feedback-wrapper {
@@ -544,4 +610,125 @@ button {
 
 .submit-wrapper p {
 	font-size: 12px;
+}
+
+.footer {
+	background: #171717;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+.footer-wrapper {
+	display: flex;
+	align-items: start;
+	padding-bottom: 25px;
+}
+
+.footer-about {
+	margin-right: 70px;
+}
+
+.company-title {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.social-media {
+	display: flex;
+	justify-content: space-between;
+	width: 120px;
+	margin-top: 25px;
+}
+
+.telegram,
+.whatsapp,
+.viber {
+	display: block;
+	background-image: url('./images/icon-telegram.png');
+	background-repeat: no-repeat;
+	width: 25px;
+	height: 20px;
+	margin-left: 0;
+}
+
+.telegram:hover {
+	background-image: url('./images/icon-hover-telegram.png');
+}
+
+.telegram:active {
+	background-image: url('./images/icon-active-telegram.png');
+}
+
+.whatsapp {
+	background-image: url('./images/icon-whatsapp.png');
+}
+
+.whatsapp:hover {
+	background-image: url('./images/icon-hover-whatsapp.png');
+}
+
+.whatsapp:active {
+	background-image: url('./images/icon-active-whatsapp.png');
+}
+
+.viber {
+	background-image: url('./images/icon-viber.png');
+}
+
+.viber:hover {
+	background-image: url('./images/icon-hover-viber.png');
+}
+
+.viber:active {
+	background-image: url('./images/icon-active-viber.png');
+}
+
+.footer-courses {
+	margin-right: 20px;
+}
+
+.footer-courses-title {
+	font-weight: 700;
+	font-size: 20px;
+	color: #F4D011;
+	margin-bottom: 20px;
+}
+
+.footer-courses-links {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+
+.footer-courses-links a {
+	width: 285px;
+}
+
+.footer-contacts .nav-link:nth-child(2) {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.uderline {
+	width: 1180px;
+	height: 0px;
+	left: 370px;
+	top: 288px;
+	border: 1px solid rgba(244, 208, 17, 0.2);
+	border-radius: 100px;
+}
+
+.footer-links-wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+	font-size: 14px;
+}
+
+.footer-link {
+	color: #FFFFFF;
+	text-decoration: none;
+	margin-left: 20px;
 }
