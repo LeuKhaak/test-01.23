@@ -23,9 +23,9 @@
 		<div class="container">
 			<div class="header-wrapper">
 				<div class="logo-image"></div>
-				<nav class="navigation">
-					<a class="nav-link">
-						<button class="courses-list-toggle">Курсы <span class="arrow"></span></button>
+				<nav class="navigation not-show">
+					<div class="nav-link">
+						<button class="courses-list-toggle" onclick="toggleCoursesList()">Курсы <span class="arrow"></span></button>
 						<ul class="courses-list">
 							<li class="courses-item"><a class="course-link" href="#courses">Управленческий коучинг</a></li>
 							<li class="courses-item"><a class="course-link" href="#courses">Android-разработка</a></li>
@@ -36,7 +36,7 @@
 							<li class="courses-item"><a class="course-link" href="#courses">Fullstack-разработчик на Python</a></li>
 							<li class="courses-item"><a class="course-link" href="#courses">DevOps-инженер</a></li>
 						</ul>
-					</a>
+					</div>
 					<a class="nav-link" href="#about">О компании</a>
 					<a class="nav-link" href="#">Акции</a>
 					<a class="nav-link" href="#contacts">Контакты</a>
@@ -45,7 +45,7 @@
 				<div class="header-telegram">
 					<a class="telegram" href="#"></a>
 				</div>
-				<button class="hamburger"></button>
+				<button class="hamburger" onclick="toggleMenu()"></button>
 			</div>
 		</div>
 	</header>

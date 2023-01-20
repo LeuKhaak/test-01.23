@@ -133,6 +133,11 @@ a:active {
 	left: 95%;
 }
 
+.rotation {
+	transform: rotate(180deg);
+	top: 14px;
+}
+
 .arrow::before,
 .arrow::after {
 	content: "";
@@ -167,6 +172,19 @@ a:active {
 
 .courses-list {
 	display: none;
+	position: absolute;
+	top: 30px;
+	width: 280px;
+	font-weight: 500;
+	font-size: 16px;
+	padding: 10px;
+	border-radius: 10px;
+	background: rgba(0, 0, 0, 0.7);
+	box-shadow: 0px 6px 6px rgba(85, 85, 85, 0.25);
+}
+
+.courses-item:not(:first-child) {
+	margin-top: 10px;
 }
 
 .phone {
@@ -187,6 +205,20 @@ a:active {
 	height: 30px;
 	border: none;
 	border-radius: 0;
+}
+
+.hamburger:hover,
+.hamburger:active {
+	background-color: rgba(250, 250, 250, 0);
+	box-shadow: none;
+	border-radius: 0px;
+	background-image: url('./images/icon-hamburger.png');
+}
+
+.close-menu,
+.close-menu:hover,
+.close-menu:active {
+	background-image: url('./images/icon-cross-menu.png');
 }
 
 .main {
@@ -798,10 +830,6 @@ a:active {
 	display: none;
 }
 
-.show-popup {
-	display: block;
-}
-
 .popup-wrapper {
 	width: 820px;
 	height: 986px;
@@ -1043,4 +1071,8 @@ a:active {
 .popup .join {
 	width: 180px;
 	margin-top: 20px;
+}
+
+.show {
+	display: block;
 }

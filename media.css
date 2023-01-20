@@ -8,7 +8,6 @@
 		padding: 0 20px;
 	}
 
-	.navigation,
 	.phone,
 	.header-telegram {
 		display: none;
@@ -20,6 +19,61 @@
 
 	.hamburger {
 		display: block;
+	}
+
+	.navigation {
+		position: absolute;
+		flex-direction: column;
+		align-items: start;
+		justify-content: start;
+		width: 320px;
+		height: 627px;
+		padding: 20px;
+		left: 0px;
+		top: 80px;
+		background: rgba(0, 0, 0, 0.7);
+		backdrop-filter: blur(12.5px);
+		font-weight: 700;
+	}
+
+	.nav-link {
+		margin-bottom: 10px;
+	}
+
+	.nav-link:first-child {
+		position: relative;
+		left: -5px;
+		margin-bottom: 300px;
+
+	}
+
+	.courses-list-toggle {
+		font-weight: 700;
+	}
+
+	.arrow {
+		transform: rotate(180deg);
+		top: 14px;
+	}
+
+	.courses-list {
+		display: block;
+		background-color: rgba(0, 0, 0, 0);
+		box-shadow: none;
+		left: 20px;
+		font-weight: 500;
+	}
+
+	.courses-item:not(first-child) {
+		margin-top: 20px;
+	}
+
+	.show {
+		display: block;
+	}
+
+	.not-show {
+		display: none;
 	}
 
 }
