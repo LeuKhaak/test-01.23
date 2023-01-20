@@ -94,11 +94,19 @@
 		line-height: 45px;
 	}
 
+	.main-title {
+		margin-bottom: 20px;
+	}
+
 	.benefits-wrapper {
 		grid-template-rows: 1fr 1fr 1fr 1fr;
 		grid-template-columns: 1fr;
 		grid-row-gap: 12px;
 		margin-bottom: 21px;
+	}
+
+	.benefit {
+		font-size: 14px;
 	}
 
 	.main-buttons-wrapper {
