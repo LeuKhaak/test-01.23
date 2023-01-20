@@ -223,5 +223,38 @@
 		top: 2px;
 	}
 
+	.popup-header {
+		height: 160px;
+		padding: 20px;
+		font-weight: 700;
+	}
+
+	.popup-header-text {
+		width: 360px;
+		position: relative;
+	}
+
+	.popup-close {
+		position: absolute;
+		top: -58px;
+		left: 307px;
+		width: 35px;
+		height: 37px;
+		box-shadow: none;
+		border: none;
+		background: none;
+	}
+
+	.popup-mini {
+		background-color: #252525;
+		background-image: url('./images/icon-cross.png');
+		background-repeat: no-repeat;
+	}
+
+	.popup-title {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+
 
 }

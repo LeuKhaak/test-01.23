@@ -16,6 +16,7 @@ const showPopUp = () => {
 };
 
 const closePopUp = () => {
+  console.log("CLOSE");
   popUp.classList.remove("show");
   allSections.classList.remove("all-sections");
 };
