@@ -4,6 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>insaitika-test</title>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,6 +13,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="style.css" />
+
+	<link rel="stylesheet" href="media.css" />
 
 </head>
 
@@ -20,7 +24,19 @@
 			<div class="header-wrapper">
 				<div class="logo-image"></div>
 				<nav class="navigation">
-					<a class="nav-link" href="#courses">Курсы <span class="arrow"></span></a>
+					<a class="nav-link">
+						<button class="courses-list-toggle">Курсы <span class="arrow"></span></button>
+						<ul class="courses-list">
+							<li class="courses-item"><a class="course-link" href="#courses">Управленческий коучинг</a></li>
+							<li class="courses-item"><a class="course-link" href="#courses">Android-разработка</a></li>
+							<li class="courses-item"><a class="course-link" href="#courses">Digital-маркетинг</a></li>
+							<li class="courses-item"><a class="course-link" href="#courses">Soft Skills for Hard Times</a></li>
+							<li class="courses-item"><a class="course-link" href="#courses">Разработчик игр на Unity</a></li>
+							<li class="courses-item"><a class="course-link" href="#courses">Веб-дизайнер</a></li>
+							<li class="courses-item"><a class="course-link" href="#courses">Fullstack-разработчик на Python</a></li>
+							<li class="courses-item"><a class="course-link" href="#courses">DevOps-инженер</a></li>
+						</ul>
+					</a>
 					<a class="nav-link" href="#about">О компании</a>
 					<a class="nav-link" href="#">Акции</a>
 					<a class="nav-link" href="#contacts">Контакты</a>
@@ -29,10 +45,11 @@
 				<div class="header-telegram">
 					<a class="telegram" href="#"></a>
 				</div>
+				<button class="hamburger"></button>
 			</div>
 		</div>
 	</header>
-	<div class="show-all-sections">
+	<div class="show-all-sections not-show">
 		<main class="main">
 			<div class="container">
 				<div class="main-wrapper">
@@ -93,7 +110,7 @@
 							<div class="reduced-pay"><span class="number">1984 </span>BYN</div>
 						</div>
 						<div class="course-item-buttons">
-							<button class="more-detail">Подробнее</button>
+							<button class="more-detail" onclick="showPopUp()">Подробнее</button>
 							<button class="join">Записаться</button>
 						</div>
 					</div>
@@ -121,7 +138,7 @@
 							<div class="reduced-pay"><span class="number">1984 </span>BYN</div>
 						</div>
 						<div class="course-item-buttons">
-							<button class="more-detail more-2">Подробнее</button>
+							<button class="more-detail" onclick="showPopUp()">Подробнее</button>
 							<button class="join">Записаться</button>
 						</div>
 					</div>
@@ -150,7 +167,7 @@
 							<div class="reduced-pay"><span class="number">1984 </span>BYN</div>
 						</div>
 						<div class="course-item-buttons">
-							<button class="more-detail more-3">Подробнее</button>
+							<button class="more-detail" onclick="showPopUp()">Подробнее</button>
 							<button class="join">Записаться</button>
 						</div>
 					</div>
@@ -178,7 +195,7 @@
 							<div class="reduced-pay"><span class="number">1984 </span>BYN</div>
 						</div>
 						<div class="course-item-buttons">
-							<button class="more-detail more-4">Подробнее</button>
+							<button class="more-detail" onclick="showPopUp()">Подробнее</button>
 							<button class="join">Записаться</button>
 						</div>
 					</div>
@@ -254,7 +271,7 @@
 		</section>
 	</div>
 
-	<footer class="footer">
+	<footer class="footer not-show">
 		<div class="container">
 			<div class="footer-wrapper">
 				<div class="footer-about">
@@ -311,7 +328,7 @@
 						<p>Длительность:<span>24 месяца</span></p>
 					</div>
 				</div>
-				<button class="popup-close"></button>
+				<button class="popup-close" onclick="closePopUp()"></button>
 			</div>
 			<div class="popup-main">
 				<div class="popup-left">

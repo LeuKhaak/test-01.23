@@ -3,6 +3,10 @@
 	padding: 0;
 }
 
+.not-show {
+	display: block;
+}
+
 body {
 	background-color: #252525;
 	color: #FFFFFF;
@@ -17,6 +21,11 @@ li {
 ul {
 	margin-left: 0;
 	padding-left: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #FFFFFF;
 }
 
 p {
@@ -61,7 +70,6 @@ button:active {
 }
 
 .container {
-	width: 98%;
 	max-width: 1180px;
 	margin: 0 auto;
 }
@@ -89,15 +97,17 @@ button:active {
 	width: 400px;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	margin-left: auto;
 	font-weight: 500;
 }
 
-a:hover {
+a:hover,
+.courses-list-toggle:hover {
+	color: #FFFFFF;
+	background-color: rgba(250, 250, 250, 0);
 	text-decoration: underline;
 	text-decoration-color: #FFEB7F;
-	position: relative;
-	top: -2px;
 }
 
 a:active {
@@ -119,8 +129,8 @@ a:active {
 
 .arrow {
 	position: absolute;
-	top: 8px;
-	left: 105%;
+	top: 12px;
+	left: 95%;
 }
 
 .arrow::before,
@@ -140,6 +150,25 @@ a:active {
 	left: -1px;
 }
 
+.courses-list-toggle {
+	width: 55px;
+	height: 25px;
+	border: none;
+	background-color: rgba(250, 250, 250, 0);
+	box-shadow: none;
+	color: #FFFFFF;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.courses-list-toggle:active {
+	text-decoration: none;
+}
+
+.courses-list {
+	display: none;
+}
+
 .phone {
 	margin-left: 80px;
 }
@@ -148,6 +177,16 @@ a:active {
 	margin-left: 25px;
 	width: 20px;
 	height: 20px;
+}
+
+.hamburger {
+	background-image: url('./images/icon-hamburger.png');
+	background-repeat: no-repeat;
+	display: none;
+	width: 31px;
+	height: 30px;
+	border: none;
+	border-radius: 0;
 }
 
 .main {
