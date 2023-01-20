@@ -478,6 +478,12 @@ a:active {
 	line-height: 15px
 }
 
+.annual {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
 .reduced-pay {
 	font-weight: 400;
 	font-size: 16px;
