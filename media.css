@@ -254,20 +254,34 @@
 
 
 	.popup-programm {
-		width: 300px;
+		width: 320px;
 		height: 226px;
 		padding: 10px;
+		margin-right: 0;
 	}
 
 	.popup-programm-title {
 		align-items: center;
 		font-size: 14px;
+		font-weight: 700;
 		margin-bottom: 10px;
+	}
+
+	.short .popup-programm-title {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 0;
 	}
 
 	.programm-item {
 		font-size: 14px;
 		line-height: 19px;
+	}
+
+	.short {
+		height: 26px;
+		padding: 12px 10px;
 	}
 
 	.not-required {
