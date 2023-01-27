@@ -208,6 +208,9 @@
 		margin-bottom: 10px;
 	}
 
+	.all-sections {
+		height: 1330px;
+	}
 
 	.popup {
 		height: 1180px;
@@ -451,6 +454,80 @@
 
 	.submit-wrapper p {
 		width: 235px;
+	}
+
+	.footer-wrapper {
+		flex-direction: column;
+	}
+
+	.footer-about {
+		margin-right: 0;
+	}
+
+	.footer-about .logo-image {
+		width: 230px;
+		height: 87px;
+		background-size: contain;
+	}
+
+	.footer-about p {
+		font-size: 16px;
+		line-height: 25px;
+	}
+
+	.social-media {
+		margin-bottom: 40px;
+	}
+
+	.footer-courses-links {
+		display: flex;
+		flex-direction: column;
+		grid-row-gap: 0;
+		margin-bottom: 40px;
+	}
+
+	.footer-courses-links .nav-link:nth-child(1) {
+		left: 0;
+		margin-bottom: 10px;
+		padding-right: 0;
+	}
+
+	.footer-courses-links a,
+	.footer-contacts a {
+		font-weight: 500;
+	}
+
+	.footer-contacts {
+		margin-bottom: 80px;
+	}
+
+	.contact-link {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	.uderline {
+		width: 320px;
+	}
+
+	.footer-links-wrapper {
+		flex-direction: column;
+	}
+
+	.footer-links-wrapper p {
+		font-size: 12px;
+	}
+
+	.footer-link {
+		display: block;
+		margin-left: 0;
+		margin-top: 10px;
+		font-weight: 400;
+		font-size: 12px;
+	}
+
+	.footer-link:first-child {
+		margin-top: 20px;
 	}
 
 

@@ -601,10 +601,10 @@ a:active {
 }
 
 .persons-slider {
-	width: 80%;
+	width: 998px;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
+	overflow: hidden;
 }
 
 .person {
