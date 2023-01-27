@@ -216,6 +216,10 @@
 		top: 80px;
 	}
 
+	.popup-main {
+		flex-direction: column;
+	}
+
 	.popup-wrapper {
 		width: 360px;
 		height: 1178px;
@@ -254,7 +258,7 @@
 
 
 	.popup-programm {
-		width: 320px;
+		width: 300px;
 		height: 226px;
 		padding: 10px;
 		margin-right: 0;
@@ -265,6 +269,21 @@
 		font-size: 14px;
 		font-weight: 700;
 		margin-bottom: 10px;
+	}
+
+	.popup-left {
+		width: 320px;
+		margin-right: 0;
+	}
+
+	.popup-slider {
+		width: 320px;
+		margin-right: 0;
+	}
+
+	.popup-gallery-wrapper {
+		width: 220px;
+		overflow: hidden;
 	}
 
 	.short .popup-programm-title {
@@ -286,6 +305,152 @@
 
 	.not-required {
 		display: none;
+	}
+
+	.popup-right {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 40px;
+	}
+
+	.popup-prices {
+		width: 300px;
+		height: auto;
+		padding: 10px;
+		margin-top: 0;
+	}
+
+	.popup-discount {
+		top: -20px;
+		left: 270px;
+		width: 40px;
+		height: 40px;
+		font-size: 12px;
+	}
+
+	.pay-variants {
+		display: flex;
+		align-items: flex-end;
+	}
+
+	.popup-prices .full-pay {
+		margin-bottom: 5px;
+	}
+
+	.popup .join {
+		width: 260px;
+		margin-top: 20px;
+		margin-right: 0;
+	}
+
+	.about-top-wrapper {
+		flex-direction: column;
+	}
+
+	.about-title-wrapper {
+		margin-bottom: 40px;
+	}
+
+	.results-wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.benefit:first-child {
+		margin-bottom: 10px;
+	}
+
+	.about-image {
+		margin-right: 0;
+	}
+
+	.about-command {
+		margin-top: 20px;
+		position: relative;
+	}
+
+	.about-command .slider {
+		position: absolute;
+	}
+
+	.about-command .right {
+		left: 288px
+	}
+
+	.persons-slider {
+		width: 320px;
+		overflow: hidden;
+	}
+
+	.person {
+		flex-direction: column;
+		width: 320px;
+
+	}
+
+	.person-description {
+		width: 320px;
+		margin-left: 0;
+		align-items: center;
+	}
+
+	.person h4 {
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.person p {
+		font-size: 16px;
+		text-align: center;
+	}
+
+	.feedback-wrapper {
+		flex-direction: column;
+	}
+
+	.feedback .courses-title {
+		font-size: 32px;
+	}
+
+	.feedback-description {
+		width: 320px;
+		margin-bottom: 20px;
+	}
+
+	.feedback-description p {
+		font-size: 16px;
+	}
+
+	.form {
+		flex-direction: column;
+	}
+
+	.input-wrapper {
+		width: 320px;
+		margin-bottom: 10px;
+		margin-right: 0;
+	}
+
+	.input-wrapper p {
+		width: 300px;
+	}
+
+	.input {
+		width: 320px;
+		margin-bottom: 10px;
+	}
+
+	.submit-wrapper {
+		width: 320px;
+	}
+
+	.submit {
+		width: 320px;
+	}
+
+	.submit-wrapper p {
+		width: 235px;
 	}
 
 
