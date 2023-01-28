@@ -32,4 +32,29 @@ const toggleMenu = () => {
   hamburger.classList.toggle("close-menu");
 };
 
+const sliderGallery = document.querySelector(".slider-gallery ");
+
+const person = document.querySelector(".person");
+
+const list = sliderGallery.querySelectorAll(".person");
+
+let newWidth = 0;
+
+const moveLeft = () => {
+  const itemWidth = person.clientWidth;
+  const allWidth = itemWidth * list.length;
+  if (newWidth < allWidth - itemWidth) {
+    newWidth += itemWidth;
+    sliderGallery.style.marginLeft = `-${newWidth}px`;
+  }
+};
+
+const moveRight = () => {
+  const itemWidth = person.clientWidth;
+  if (newWidth > 0) {
+    newWidth -= itemWidth;
+    sliderGallery.style.marginLeft = `-${newWidth}px`;
+  }
+};
+
 // courses-list

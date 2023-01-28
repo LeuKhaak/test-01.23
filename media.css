@@ -386,9 +386,12 @@
 		overflow: hidden;
 	}
 
+	.slider-gallery {}
+
 	.person {
 		flex-direction: column;
 		width: 320px;
+		height: 290px;
 
 	}
 

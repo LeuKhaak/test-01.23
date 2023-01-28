@@ -602,9 +602,12 @@ a:active {
 
 .persons-slider {
 	width: 998px;
+	overflow: hidden;
+}
+
+.slider-gallery {
 	display: flex;
 	align-items: center;
-	overflow: hidden;
 }
 
 .person {
